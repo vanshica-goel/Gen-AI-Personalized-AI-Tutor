@@ -1,0 +1,44 @@
+Project Overview
+
+The Personalized AI Tutor is a Generative AI-based learning application designed to provide curriculum-aligned educational assistance to students in Classes 8–10. It uses Retrieval-Augmented Generation (RAG) to retrieve relevant information from educational PDF documents and generate context-aware answers to students' questions.
+The system also incorporates an adaptive learning mechanism that tracks student performance, identifies weak topics, and adjusts question difficulty based on learning progress.
+
+Key Features
+Retrieval-Augmented Generation (RAG): Retrieves relevant educational content before generating answers.
+Semantic Search: Uses Sentence Transformers to understand questions and retrieve relevant text.
+Vector Search: Implements FAISS for efficient similarity-based document retrieval.
+AI-Based Answer Generation: Uses FLAN-T5 Large to generate context-aware responses.
+Adaptive Learning: Adjusts learning difficulty based on student performance.
+Performance Tracking: Monitors student accuracy, attempts, and weak topics.
+PDF Processing: Extracts, cleans, and splits educational documents into smaller text chunks.
+Interactive Interface: Uses Streamlit for the learning application.
+
+Technologies Used
+Python
+Generative AI
+Retrieval-Augmented Generation (RAG)
+Sentence Transformers
+FAISS
+FLAN-T5 Large
+Hugging Face Transformers
+PyTorch
+Streamlit
+PyPDF2
+NumPy
+Google Colab
+ 
+System Workflow
+Load educational PDF documents.
+Extract and preprocess text.
+Divide documents into smaller overlapping chunks.
+Generate semantic embeddings using Sentence Transformers.
+Store embeddings in the FAISS vector index.
+Retrieve relevant content based on student queries.
+Generate answers using the FLAN-T5 Large model.
+Track student performance and adapt learning difficulty.
+
+Learning Outcomes
+Improved understanding through context-aware AI-generated answers.
+Personalized learning based on student performance.
+Identification of weak topics.
+Adaptive question difficulty for different learning levels.
